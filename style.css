@@ -25,6 +25,7 @@ h1 {
     flex-wrap: wrap;
     border: 1px solid blue;
     padding: 0.6em;
+    margin: 1em;
     height: 20.2em;
     width: 20.2em;
     gap: 2px;

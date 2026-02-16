@@ -12,6 +12,7 @@ body {
     height: 100vh;
     width: 100vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0.2em;
 }
 
 h1 {

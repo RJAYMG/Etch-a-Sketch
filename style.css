@@ -10,6 +10,7 @@ body {
     align-items: center;
     flex-direction: column;
     height: 100vh;
+    width: 100vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -18,15 +19,42 @@ h1 {
 }
 
 #container {
+    margin: auto auto;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    border: 1px solid blue;
-    padding: 0.6em;
+    border: 0.2rem solid darkblue;
     margin: 1em;
-    height: 20.2em;
-    width: 20.2em;
-    gap: 2px;
+    height: 22rem;
+    width: 22rem;
+}
+
+#wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.buttons {
+    font-size: 1em;
+    padding: 0.5em;
+    border: 2px hidden grey;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgb(211, 211, 211);
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.buttons:hover {
+    box-shadow: 2px 2px 8px rgb(100, 100, 100);
+    transform: translateY(-2px);
+}
+
+.buttons:active {
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+}
+
+.etch-square {
+    border: 1px solid black;
 }

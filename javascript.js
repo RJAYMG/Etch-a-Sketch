@@ -21,7 +21,13 @@ function createGrid(sideSquare) {
         square.addEventListener("mouseenter", () => {
             square.style.backgroundColor = "darkblue";
         });
+        square.addEventListener("touchstart", () => {
+            square.style.backgroundColor = "darkblue";
+        });
         square.addEventListener("mouseleave", () => {
+            square.style.backgroundColor = "blue";
+        })
+        square.addEventListener("touchend", () => {
             square.style.backgroundColor = "blue";
         })
     };

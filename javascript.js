@@ -31,7 +31,7 @@ function createGrid(sideSquare) {
         square.addEventListener("touchend", () => {
             square.style.backgroundColor = "blue";
             e.preventDefault;
-            square.classList.remove("touch-start-hover")
+            square.classList.remove("touch-start-hover");
             square.classList.add("touch-end-hover");
         });
     };

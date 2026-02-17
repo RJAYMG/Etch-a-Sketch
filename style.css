@@ -59,11 +59,3 @@ h1 {
 .etch-square {
     border: 1px solid black;
 }
-
-.touch-start-hover {
-    background-color: darkblue;
-}
-
-.touch-end-hover {
-    background-color: blue;
-}

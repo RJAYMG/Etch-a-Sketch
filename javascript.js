@@ -21,6 +21,7 @@ function createGrid(sideSquare) {
         square.addEventListener("pointerenter", () => {
             square.style.backgroundColor = "darkblue";
         });
+
         square.addEventListener("pointerleave", () => {
             square.style.backgroundColor = "blue";
         });

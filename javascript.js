@@ -18,21 +18,11 @@ function createGrid(sideSquare) {
         square.style.width = squareSize;
         square.classList.add("etch-square");
         container.appendChild(square);
-        square.addEventListener("mouseenter", () => {
+        square.addEventListener("pointerenter", () => {
             square.style.backgroundColor = "darkblue";
         });
-        square.addEventListener("touchstart", (e) => {
-            e.preventDefault;
-            square.classList.add("touch-start-hover");
-        });
-        square.addEventListener("mouseleave", () => {
+        square.addEventListener("pointerleave", () => {
             square.style.backgroundColor = "blue";
-        });
-        square.addEventListener("touchend", () => {
-            square.style.backgroundColor = "blue";
-            e.preventDefault;
-            square.classList.remove("touch-start-hover");
-            square.classList.add("touch-end-hover");
         });
     };
 };

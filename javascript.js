@@ -21,15 +21,19 @@ function createGrid(sideSquare) {
         square.addEventListener("mouseenter", () => {
             square.style.backgroundColor = "darkblue";
         });
-        square.addEventListener("touchstart", () => {
-            square.style.backgroundColor = "darkblue";
+        square.addEventListener("touchstart", (e) => {
+            e.preventDefault;
+            square.classList.add("touch-start-hover");
         });
         square.addEventListener("mouseleave", () => {
             square.style.backgroundColor = "blue";
-        })
+        });
         square.addEventListener("touchend", () => {
             square.style.backgroundColor = "blue";
-        })
+            e.preventDefault;
+            square.classList.remove("touch-start-hover")
+            square.classList.add("touch-end-hover");
+        });
     };
 };
 
